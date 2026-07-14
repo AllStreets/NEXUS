@@ -6,8 +6,8 @@
 
 <a href="https://github.com/AllStreets/ONEXUS/releases/tag/v1.0"><img alt="release" src="https://img.shields.io/badge/release-v1.0-b48bff?style=for-the-badge&labelColor=0a0712"/></a>
 <a href="https://github.com/AllStreets/ONEXUS/actions"><img alt="tests" src="https://img.shields.io/badge/tests-1014_passing-9affb6?style=for-the-badge&labelColor=0a0712"/></a>
-<a href="https://github.com/AllStreets/ONEXUS-Agents"><img alt="catalog" src="https://img.shields.io/badge/catalog-6%2C745_agents-b48bff?style=for-the-badge&labelColor=0a0712"/></a>
-<a href="https://github.com/AllStreets/ONEXUS-Agents"><img alt="runnable" src="https://img.shields.io/badge/runnable_(MCP)-571-b48bff?style=for-the-badge&labelColor=0a0712"/></a>
+<a href="https://github.com/AllStreets/ONEXUS-Agents"><img alt="catalog" src="https://img.shields.io/badge/catalog-7%2C000%2B_agents-b48bff?style=for-the-badge&labelColor=0a0712"/></a>
+<a href="https://github.com/AllStreets/ONEXUS-Agents"><img alt="runnable" src="https://img.shields.io/badge/runnable_(MCP)-500%2B-b48bff?style=for-the-badge&labelColor=0a0712"/></a>
 <a href="https://github.com/AllStreets/ONEXUS/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-b48bff?style=for-the-badge&labelColor=0a0712"/></a>
 
 &nbsp;
@@ -33,7 +33,7 @@
 
 ## What this is
 
-**ONEXUS runs agents the way iOS runs apps.** Built-in cognitive modules (Council, Specter, Wraith, Echo, Oracle, Legacy, Consciousness, Sentry, Autonomic, Agents-dispatcher) and **6,745 third-party agents** from [ONEXUS-Agents](https://github.com/AllStreets/ONEXUS-Agents) — **571 with MCP adapters** — share one runtime, one manifest, one trust model, one set of surfaces.
+**ONEXUS runs agents the way iOS runs apps.** Built-in cognitive modules (Council, Specter, Wraith, Echo, Oracle, Legacy, Consciousness, Sentry, Autonomic, Agents-dispatcher) and **7,000+ third-party agents** from [ONEXUS-Agents](https://github.com/AllStreets/ONEXUS-Agents) — **500+ with MCP adapters** — share one runtime, one manifest, one trust model, one set of surfaces.
 
 A workspace is a room: it owns its own agents, memory, file grants, and home tone. Every tool call routes through a **capability arbiter** that gates against the agent's declared permissions, surfaces a first-use prompt when something needs your approval, and writes every byte to an immutable audit ledger.
 
@@ -309,7 +309,7 @@ Drag any file anywhere on the conversation canvas — the surface gets a mood-ti
 
 ## Catalog
 
-ONEXUS ships with the [AllStreets/ONEXUS-Agents](https://github.com/AllStreets/ONEXUS-Agents) catalog bundled — every entry is a single JSON manifest under `catalog/<category>/<slug>.json`. **6,745 agents** across 40 categories, **571 runnable** via MCP adapters. Browse from the sidebar's *agent catalog* link, filter by category / runnable-only / search, click Launch on any runnable card.
+ONEXUS ships with the [AllStreets/ONEXUS-Agents](https://github.com/AllStreets/ONEXUS-Agents) catalog bundled — every entry is a single JSON manifest under `catalog/<category>/<slug>.json`. **7,000+ agents** across 40 categories, **500+ runnable** via MCP adapters. Browse from the sidebar's *agent catalog* link, filter by category / runnable-only / search, click Launch on any runnable card.
 
 The catalog rebuilds nightly via a [GitHub Actions cron](.github/workflows/nightly-catalog.yml) that reads the catalog repo's head SHA and pushes a fresh Docker image to GHCR.
 
